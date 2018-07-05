@@ -1,0 +1,254 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:arduino
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Arduino_Uno_Shield XA?
+U 1 1 5B3E0FD3
+P 3350 3600
+F 0 "XA?" V 3450 3600 60  0000 C CNN
+F 1 "Arduino_Uno_Shield" V 3250 3600 60  0000 C CNN
+F 2 "" H 5150 7350 60  0001 C CNN
+F 3 "" H 5150 7350 60  0001 C CNN
+	1    3350 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Earth #PWR01
+U 1 1 5B3E1064
+P 4850 3150
+F 0 "#PWR01" H 4850 2900 50  0001 C CNN
+F 1 "Earth" H 4850 3000 50  0001 C CNN
+F 2 "" H 4850 3150 50  0001 C CNN
+F 3 "" H 4850 3150 50  0001 C CNN
+	1    4850 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR02
+U 1 1 5B3E1082
+P 4850 2550
+F 0 "#PWR02" H 4850 2400 50  0001 C CNN
+F 1 "+5V" H 4850 2690 50  0000 C CNN
+F 2 "" H 4850 2550 50  0001 C CNN
+F 3 "" H 4850 2550 50  0001 C CNN
+	1    4850 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5B3E11BC
+P 5250 4550
+F 0 "R1" V 5330 4550 50  0000 C CNN
+F 1 "220" V 5250 4550 50  0000 C CNN
+F 2 "" V 5180 4550 50  0001 C CNN
+F 3 "" H 5250 4550 50  0001 C CNN
+	1    5250 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 5B3E1244
+P 5450 4550
+F 0 "R2" V 5530 4550 50  0000 C CNN
+F 1 "220" V 5450 4550 50  0000 C CNN
+F 2 "" V 5380 4550 50  0001 C CNN
+F 3 "" H 5450 4550 50  0001 C CNN
+	1    5450 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 5B3E1274
+P 5650 4550
+F 0 "R3" V 5730 4550 50  0000 C CNN
+F 1 "220" V 5650 4550 50  0000 C CNN
+F 2 "" V 5580 4550 50  0001 C CNN
+F 3 "" H 5650 4550 50  0001 C CNN
+	1    5650 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 5B3E138E
+P 6050 4550
+F 0 "R4" V 6130 4550 50  0000 C CNN
+F 1 "10K" V 6050 4550 50  0000 C CNN
+F 2 "" V 5980 4550 50  0001 C CNN
+F 3 "" H 6050 4550 50  0001 C CNN
+	1    6050 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 5B3E13E8
+P 6450 4550
+F 0 "R5" V 6530 4550 50  0000 C CNN
+F 1 "10M" V 6450 4550 50  0000 C CNN
+F 2 "" V 6380 4550 50  0001 C CNN
+F 3 "" H 6450 4550 50  0001 C CNN
+	1    6450 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR03
+U 1 1 5B3E14AE
+P 6050 5000
+F 0 "#PWR03" H 6050 4750 50  0001 C CNN
+F 1 "Earth" H 6050 4850 50  0001 C CNN
+F 2 "" H 6050 5000 50  0001 C CNN
+F 3 "" H 6050 5000 50  0001 C CNN
+	1    6050 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_DPST_x2 SW1
+U 1 1 5B3E1550
+P 5450 4000
+F 0 "SW1" H 5450 4125 50  0000 C CNN
+F 1 "SW_DPST_x2" H 5450 3900 50  0001 C CNN
+F 2 "" H 5450 4000 50  0001 C CNN
+F 3 "" H 5450 4000 50  0001 C CNN
+	1    5450 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SW_DPST_x2 SW2
+U 1 1 5B3E15B8
+P 6050 4000
+F 0 "SW2" H 6050 4125 50  0000 C CNN
+F 1 "SW_DPST_x2" H 6050 3900 50  0001 C CNN
+F 2 "" H 6050 4000 50  0001 C CNN
+F 3 "" H 6050 4000 50  0001 C CNN
+	1    6050 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SW_DPST_x2 SW3
+U 1 1 5B3E15EF
+P 6450 4000
+F 0 "SW3" H 6450 4125 50  0000 C CNN
+F 1 "SW_DPST_x2" H 6450 3900 50  0001 C CNN
+F 2 "" H 6450 4000 50  0001 C CNN
+F 3 "" H 6450 4000 50  0001 C CNN
+	1    6450 4000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4650 3050 4850 3050
+Wire Wire Line
+	4650 2650 4850 2650
+Wire Wire Line
+	4850 2650 4850 2550
+Wire Wire Line
+	4850 3050 4850 3150
+Wire Wire Line
+	5250 4700 5250 4800
+Wire Wire Line
+	5250 4800 5650 4800
+Wire Wire Line
+	5650 4800 5650 4700
+Wire Wire Line
+	5450 4700 5450 4900
+Connection ~ 5450 4800
+Wire Wire Line
+	5450 4200 5450 4400
+Wire Wire Line
+	5250 4300 5650 4300
+Wire Wire Line
+	5250 4300 5250 4400
+Wire Wire Line
+	5650 4300 5650 4400
+Connection ~ 5450 4300
+Wire Wire Line
+	5450 4900 6450 4900
+Wire Wire Line
+	6450 4900 6450 4700
+Wire Wire Line
+	6050 4700 6050 5000
+Connection ~ 6050 4900
+Wire Wire Line
+	6050 4400 6050 4200
+Wire Wire Line
+	6450 4400 6450 4200
+Wire Wire Line
+	6450 3700 6450 3800
+Wire Wire Line
+	5450 3700 6450 3700
+Wire Wire Line
+	6050 3350 6050 3800
+Wire Wire Line
+	5450 3700 5450 3800
+Connection ~ 6050 3700
+Wire Wire Line
+	6050 3450 4650 3450
+$Comp
+L R_Variable Rm
+U 1 1 5B3E1ECF
+P 6050 3200
+F 0 "Rm" V 6150 3100 50  0000 L CNN
+F 1 "R_Variable" V 5950 3150 50  0000 L CNN
+F 2 "" V 5980 3200 50  0001 C CNN
+F 3 "" H 6050 3200 50  0001 C CNN
+	1    6050 3200
+	1    0    0    -1  
+$EndComp
+Connection ~ 6050 3450
+Wire Wire Line
+	6050 3050 6050 2950
+$Comp
+L +5V #PWR04
+U 1 1 5B3E1F81
+P 6050 2950
+F 0 "#PWR04" H 6050 2800 50  0001 C CNN
+F 1 "+5V" H 6050 3090 50  0000 C CNN
+F 2 "" H 6050 2950 50  0001 C CNN
+F 3 "" H 6050 2950 50  0001 C CNN
+	1    6050 2950
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
