@@ -1370,4 +1370,8 @@ Wire Bus Line
 Wire Bus Line
 	4250 2550 3150 2550
 NoConn ~ 1350 6100
+Text Label 3150 2600 2    60   ~ 0
+d[8..12]
+Text Label 4150 3800 2    60   ~ 0
+d[2..7]
 $EndSCHEMATC
