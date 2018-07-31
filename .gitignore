@@ -26,6 +26,9 @@ _autosave-*
 *.xml
 *.csv
 
-# Arduino shield library
-schematics/Resistance\ Meter/Arduino
+# Gerber files
+schematics/Resistance\ Meter/gerber
+
+# Rescue backup from KiCad 4.0
+schematics/Resistance\ Meter/gerber
 

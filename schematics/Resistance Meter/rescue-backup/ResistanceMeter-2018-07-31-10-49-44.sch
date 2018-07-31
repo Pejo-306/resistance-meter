@@ -1,6 +1,39 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:arduino
 LIBS:ResistanceMeter-cache
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -15,7 +48,18 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ResistanceMeter-rescue:R R5
+L Arduino_Uno_Shield A_UNO1
+U 1 1 5B3E0FD3
+P 2650 5550
+F 0 "A_UNO1" V 2750 5550 60  0001 C CNN
+F 1 "Arduino_Uno_Shield" V 2550 5550 60  0000 C CNN
+F 2 "Arduino:Arduino_Uno_Shield" H 4450 9300 60  0001 C CNN
+F 3 "" H 4450 9300 60  0001 C CNN
+	1    2650 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
 U 1 1 5B3E11BC
 P 7650 3900
 F 0 "R5" V 7730 3900 50  0000 C CNN
@@ -26,7 +70,7 @@ F 3 "" H 7650 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ResistanceMeter-rescue:R R7
+L R R7
 U 1 1 5B3E138E
 P 8450 3900
 F 0 "R7" V 8530 3900 50  0000 C CNN
@@ -37,7 +81,7 @@ F 3 "" H 8450 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ResistanceMeter-rescue:R R8
+L R R8
 U 1 1 5B3E13E8
 P 8850 3900
 F 0 "R8" V 8930 3900 50  0000 C CNN
@@ -48,7 +92,7 @@ F 3 "" H 8850 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:Earth #PWR01
+L Earth #PWR01
 U 1 1 5B3E14AE
 P 8450 4350
 F 0 "#PWR01" H 8450 4100 50  0001 C CNN
@@ -59,7 +103,7 @@ F 3 "" H 8450 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ResistanceMeter-rescue:R R6
+L R R6
 U 1 1 5B3E3220
 P 7850 3900
 F 0 "R6" V 7930 3900 50  0000 C CNN
@@ -70,7 +114,7 @@ F 3 "" H 7850 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ResistanceMeter-rescue:IRF540N Q2
+L IRF540N Q2
 U 1 1 5B3E365D
 P 8350 3350
 F 0 "Q2" H 8500 3550 50  0000 L CNN
@@ -81,7 +125,7 @@ F 3 "" H 8350 3350 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ResistanceMeter-rescue:IRF540N Q1
+L IRF540N Q1
 U 1 1 5B3E36A6
 P 7650 3350
 F 0 "Q1" H 7800 3550 50  0000 L CNN
@@ -92,7 +136,7 @@ F 3 "" H 7650 3350 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ResistanceMeter-rescue:LED D3
+L LED D3
 U 1 1 5B3E453C
 P 6700 1600
 F 0 "D3" H 6700 1700 50  0000 C CNN
@@ -103,7 +147,7 @@ F 3 "" H 6700 1600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ResistanceMeter-rescue:LED D2
+L LED D2
 U 1 1 5B3E4711
 P 7000 1600
 F 0 "D2" H 7000 1700 50  0000 C CNN
@@ -114,7 +158,7 @@ F 3 "" H 7000 1600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ResistanceMeter-rescue:LED D1
+L LED D1
 U 1 1 5B3E4765
 P 7300 1600
 F 0 "D1" H 7300 1700 50  0000 C CNN
@@ -125,7 +169,7 @@ F 3 "" H 7300 1600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ResistanceMeter-rescue:R R3
+L R R3
 U 1 1 5B3E488E
 P 6700 2000
 F 0 "R3" V 6780 2000 50  0000 C CNN
@@ -136,7 +180,7 @@ F 3 "" H 6700 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ResistanceMeter-rescue:R R2
+L R R2
 U 1 1 5B3E49A4
 P 7000 2000
 F 0 "R2" V 7080 2000 50  0000 C CNN
@@ -147,7 +191,7 @@ F 3 "" H 7000 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ResistanceMeter-rescue:R R1
+L R R1
 U 1 1 5B3E49E9
 P 7300 2000
 F 0 "R1" V 7380 2000 50  0000 C CNN
@@ -158,7 +202,7 @@ F 3 "" H 7300 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:Earth #PWR02
+L Earth #PWR02
 U 1 1 5B3E4B7D
 P 6700 2250
 F 0 "#PWR02" H 6700 2000 50  0001 C CNN
@@ -169,7 +213,7 @@ F 3 "" H 6700 2250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:Earth #PWR03
+L Earth #PWR03
 U 1 1 5B3E4BBF
 P 7000 2250
 F 0 "#PWR03" H 7000 2000 50  0001 C CNN
@@ -180,7 +224,7 @@ F 3 "" H 7000 2250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:Earth #PWR04
+L Earth #PWR04
 U 1 1 5B3E4BFA
 P 7300 2250
 F 0 "#PWR04" H 7300 2000 50  0001 C CNN
@@ -191,7 +235,7 @@ F 3 "" H 7300 2250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:Earth #PWR05
+L Earth #PWR05
 U 1 1 5B3E5D17
 P 7600 2250
 F 0 "#PWR05" H 7600 2000 50  0001 C CNN
@@ -202,7 +246,7 @@ F 3 "" H 7600 2250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ResistanceMeter-rescue:R R4
+L R R4
 U 1 1 5B3E5D52
 P 7600 2000
 F 0 "R4" V 7680 2000 50  0000 C CNN
@@ -213,7 +257,7 @@ F 3 "" H 7600 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ResistanceMeter-rescue:LED D6
+L LED D6
 U 1 1 5B3E6341
 P 7600 1600
 F 0 "D6" H 7600 1700 50  0000 C CNN
@@ -224,7 +268,7 @@ F 3 "" H 7600 1600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:+5V #PWR06
+L +5V #PWR06
 U 1 1 5B3E64A1
 P 7600 1350
 F 0 "#PWR06" H 7600 1200 50  0001 C CNN
@@ -235,7 +279,7 @@ F 3 "" H 7600 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:Earth #PWR07
+L Earth #PWR07
 U 1 1 5B3E7E80
 P 7450 4600
 F 0 "#PWR07" H 7450 4350 50  0001 C CNN
@@ -246,7 +290,7 @@ F 3 "" H 7450 4600 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:Earth #PWR08
+L Earth #PWR08
 U 1 1 5B3E7F94
 P 6850 6700
 F 0 "#PWR08" H 6850 6450 50  0001 C CNN
@@ -257,7 +301,7 @@ F 3 "" H 6850 6700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ResistanceMeter-rescue:R R9
+L R R9
 U 1 1 5B3E81E5
 P 6650 6450
 F 0 "R9" V 6750 6450 50  0000 C CNN
@@ -268,7 +312,7 @@ F 3 "" H 6650 6450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR09
+L +5V #PWR09
 U 1 1 5B3E8873
 P 7350 4600
 F 0 "#PWR09" H 7350 4450 50  0001 C CNN
@@ -279,7 +323,7 @@ F 3 "" H 7350 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ResistanceMeter-rescue:POT RV1
+L POT RV1
 U 1 1 5B3E899C
 P 6500 5000
 F 0 "RV1" V 6325 5000 50  0000 C CNN
@@ -290,7 +334,7 @@ F 3 "" H 6500 5000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR010
+L +5V #PWR010
 U 1 1 5B3E8AE7
 P 6500 4750
 F 0 "#PWR010" H 6500 4600 50  0001 C CNN
@@ -301,7 +345,7 @@ F 3 "" H 6500 4750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:Earth #PWR011
+L Earth #PWR011
 U 1 1 5B3E9335
 P 7350 5300
 F 0 "#PWR011" H 7350 5050 50  0001 C CNN
@@ -312,7 +356,7 @@ F 3 "" H 7350 5300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR012
+L +5V #PWR012
 U 1 1 5B3EB082
 P 6650 6700
 F 0 "#PWR012" H 6650 6550 50  0001 C CNN
@@ -323,7 +367,7 @@ F 3 "" H 6650 6700 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L ResistanceMeter-rescue:SW_Push SW1
+L SW_Push SW1
 U 1 1 5B3ED40D
 P 4900 5250
 F 0 "SW1" H 4950 5350 50  0000 L CNN
@@ -334,7 +378,7 @@ F 3 "" H 4900 5450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:+5V #PWR013
+L +5V #PWR013
 U 1 1 5B3ED5AD
 P 4900 4950
 F 0 "#PWR013" H 4900 4800 50  0001 C CNN
@@ -345,7 +389,7 @@ F 3 "" H 4900 4950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ResistanceMeter-rescue:R R10
+L R R10
 U 1 1 5B3ED87F
 P 4900 6200
 F 0 "R10" V 4980 6200 50  0000 C CNN
@@ -356,7 +400,7 @@ F 3 "" H 4900 6200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:Earth #PWR014
+L Earth #PWR014
 U 1 1 5B3ED940
 P 4900 6450
 F 0 "#PWR014" H 4900 6200 50  0001 C CNN
@@ -367,7 +411,7 @@ F 3 "" H 4900 6450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ResistanceMeter-rescue:SW_Push SW2
+L SW_Push SW2
 U 1 1 5B3EE4C0
 P 5300 5250
 F 0 "SW2" H 5350 5350 50  0000 L CNN
@@ -378,7 +422,7 @@ F 3 "" H 5300 5450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:+5V #PWR015
+L +5V #PWR015
 U 1 1 5B3EE59E
 P 5300 4950
 F 0 "#PWR015" H 5300 4800 50  0001 C CNN
@@ -389,7 +433,7 @@ F 3 "" H 5300 4950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ResistanceMeter-rescue:R R11
+L R R11
 U 1 1 5B3EE5EB
 P 5300 6200
 F 0 "R11" V 5380 6200 50  0000 C CNN
@@ -400,7 +444,7 @@ F 3 "" H 5300 6200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:Earth #PWR016
+L Earth #PWR016
 U 1 1 5B3EE64C
 P 5300 6450
 F 0 "#PWR016" H 5300 6200 50  0001 C CNN
@@ -410,8 +454,21 @@ F 3 "" H 5300 6450 50  0001 C CNN
 	1    5300 6450
 	1    0    0    -1  
 $EndComp
+NoConn ~ 1350 4500
+NoConn ~ 1350 4600
+NoConn ~ 1350 4800
+NoConn ~ 1350 4900
+NoConn ~ 1350 5200
+NoConn ~ 1350 5300
+NoConn ~ 1350 5400
+NoConn ~ 1350 5500
+NoConn ~ 1350 5600
+NoConn ~ 1350 5800
+NoConn ~ 1350 6600
+NoConn ~ 1350 6400
+NoConn ~ 1350 6300
 $Comp
-L power:PWR_FLAG #FLG017
+L PWR_FLAG #FLG017
 U 1 1 5B3E5384
 P 9400 1400
 F 0 "#FLG017" H 9400 1475 50  0001 C CNN
@@ -422,7 +479,7 @@ F 3 "" H 9400 1400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG018
+L PWR_FLAG #FLG018
 U 1 1 5B3E589C
 P 8950 1400
 F 0 "#FLG018" H 8950 1475 50  0001 C CNN
@@ -433,7 +490,7 @@ F 3 "" H 8950 1400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ResistanceMeter-rescue:LED D4
+L LED D4
 U 1 1 5B3E8104
 P 4900 5800
 F 0 "D4" H 4900 5900 50  0000 C CNN
@@ -444,7 +501,7 @@ F 3 "" H 4900 5800 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ResistanceMeter-rescue:LED D5
+L LED D5
 U 1 1 5B3E8177
 P 5300 5800
 F 0 "D5" H 5300 5900 50  0000 C CNN
@@ -455,7 +512,7 @@ F 3 "" H 5300 5800 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:Earth #PWR019
+L Earth #PWR019
 U 1 1 5B4237A5
 P 9400 1500
 F 0 "#PWR019" H 9400 1250 50  0001 C CNN
@@ -466,7 +523,7 @@ F 3 "" H 9400 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR020
+L +5V #PWR020
 U 1 1 5B4239D8
 P 8950 1500
 F 0 "#PWR020" H 8950 1350 50  0001 C CNN
@@ -478,10 +535,10 @@ F 3 "" H 8950 1500 50  0001 C CNN
 $EndComp
 Text Label 9200 2850 2    60   ~ 0
 ANALOG_INPUT
-Text Label 3300 5100 3    60   ~ 0
+Text Label 950  5300 3    60   ~ 0
 ANALOG_INPUT
 $Comp
-L power:+5V #PWR021
+L +5V #PWR021
 U 1 1 5B426999
 P 8450 2350
 F 0 "#PWR021" H 8450 2200 50  0001 C CNN
@@ -492,7 +549,7 @@ F 3 "" H 8450 2350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ResistanceMeter-rescue:WC1602A DS1
+L WC1602A DS1
 U 1 1 5B4275DC
 P 9950 5600
 F 0 "DS1" H 9720 6350 50  0001 C CNN
@@ -503,7 +560,7 @@ F 3 "" H 10650 5600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:Earth #PWR022
+L Earth #PWR022
 U 1 1 5B427FCB
 P 6500 5250
 F 0 "#PWR022" H 6500 5000 50  0001 C CNN
@@ -514,7 +571,7 @@ F 3 "" H 6500 5250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ResistanceMeter-rescue:Conn_01x01_Female J1
+L Conn_01x01_Female J1
 U 1 1 5B4298B6
 P 8650 2550
 F 0 "J1" H 8400 2550 50  0000 C CNN
@@ -525,7 +582,7 @@ F 3 "" H 8650 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ResistanceMeter-rescue:Conn_01x01_Female J2
+L Conn_01x01_Female J2
 U 1 1 5B429AB0
 P 8650 2650
 F 0 "J2" H 8400 2650 50  0000 C CNN
@@ -536,7 +593,7 @@ F 3 "" H 8650 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ResistanceMeter-rescue:Conn_01x16_Female J3
+L Conn_01x16_Female J3
 U 1 1 5B4359E7
 P 8650 5400
 F 0 "J3" H 8650 6200 50  0000 C CNN
@@ -684,8 +741,51 @@ Entry Wire Line
 	10550 5300 10650 5200
 Entry Wire Line
 	10550 5400 10650 5300
+NoConn ~ 3950 6600
+NoConn ~ 3950 6500
+NoConn ~ 3950 6300
+NoConn ~ 3950 6200
+NoConn ~ 3950 6100
+NoConn ~ 3950 6000
+NoConn ~ 3950 5900
+NoConn ~ 3950 5800
+NoConn ~ 3950 5600
+Text Label 3950 4500 0    60   ~ 0
+d2
+Text Label 3950 4600 0    60   ~ 0
+d3
+Text Label 3950 4700 0    60   ~ 0
+d4
+Text Label 3950 4800 0    60   ~ 0
+d5
+Text Label 3950 4900 0    60   ~ 0
+d6
+Text Label 3950 5000 0    60   ~ 0
+d7
+Entry Wire Line
+	4050 4500 4150 4400
+Entry Wire Line
+	4050 4600 4150 4500
+Entry Wire Line
+	4050 4700 4150 4600
+Entry Wire Line
+	4050 4800 4150 4700
+Entry Wire Line
+	4050 4900 4150 4800
+Entry Wire Line
+	4050 5000 4150 4900
+Text Label 4150 4400 2    60   ~ 0
+d[2..7]
+Entry Wire Line
+	4150 5100 4250 5000
+Entry Wire Line
+	4150 5200 4250 5100
+Entry Wire Line
+	4150 5300 4250 5200
+Entry Wire Line
+	4150 5500 4250 5400
 $Comp
-L ResistanceMeter-rescue:Conn_01x08_Male J7
+L Conn_01x08_Male J7
 U 1 1 5B43DDA9
 P 3750 3250
 F 0 "J7" H 3750 3650 50  0000 C CNN
@@ -710,7 +810,7 @@ Entry Wire Line
 Entry Wire Line
 	4050 3650 4150 3750
 $Comp
-L ResistanceMeter-rescue:Conn_01x10_Male J6
+L Conn_01x10_Male J6
 U 1 1 5B43E804
 P 2650 3150
 F 0 "J6" H 2650 3650 50  0000 C CNN
@@ -726,7 +826,7 @@ NoConn ~ 2850 3450
 NoConn ~ 2850 3550
 NoConn ~ 2850 3650
 $Comp
-L ResistanceMeter-rescue:Conn_01x06_Male J5
+L Conn_01x06_Male J5
 U 1 1 5B43F036
 P 2200 3450
 F 0 "J5" H 2200 3750 50  0000 C CNN
@@ -744,7 +844,7 @@ NoConn ~ 2000 3650
 Text Label 1800 2750 3    60   ~ 0
 ANALOG_INPUT
 $Comp
-L ResistanceMeter-rescue:Conn_01x08_Male J4
+L Conn_01x08_Male J4
 U 1 1 5B43F703
 P 1350 3350
 F 0 "J4" H 1350 3750 50  0000 C CNN
@@ -765,7 +865,7 @@ p4
 Text Label 1150 3450 2    60   ~ 0
 p3
 $Comp
-L power:Earth #PWR023
+L Earth #PWR023
 U 1 1 5B44043E
 P 950 3600
 F 0 "#PWR023" H 950 3350 50  0001 C CNN
@@ -776,7 +876,7 @@ F 3 "" H 950 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR024
+L +5V #PWR024
 U 1 1 5B44056C
 P 950 3250
 F 0 "#PWR024" H 950 3100 50  0001 C CNN
@@ -786,10 +886,24 @@ F 3 "" H 950 3250 50  0001 C CNN
 	1    950  3250
 	1    0    0    -1  
 $EndComp
-Text Label 2600 6600 0    60   ~ 0
+Text Label 1350 6200 2    60   ~ 0
 p3
-Text Label 2800 4400 0    60   ~ 0
+Text Label 1350 6500 2    60   ~ 0
 p4
+Entry Wire Line
+	4150 5400 4250 5300
+Text Label 3950 5100 0    60   ~ 0
+d8
+Text Label 3950 5200 0    60   ~ 0
+d9
+Text Label 3950 5300 0    60   ~ 0
+d10
+Text Label 3950 5400 0    60   ~ 0
+d11
+Text Label 3950 5500 0    60   ~ 0
+d12
+Text Label 4250 5000 0    60   ~ 0
+d[8..12]
 Entry Wire Line
 	3050 2750 3150 2650
 Entry Wire Line
@@ -870,7 +984,7 @@ Text Label 8450 5900 2    60   ~ 0
 a13
 Text Label 8450 6000 2    60   ~ 0
 a14
-Text Label 8450 6100 3    60   ~ 0
+Text Label 8450 6100 2    60   ~ 0
 a15
 Text Label 8450 6200 2    60   ~ 0
 a16
@@ -912,7 +1026,7 @@ Wire Wire Line
 	4900 5550 5100 5550
 Connection ~ 5300 5550
 Wire Wire Line
-	5300 5450 5300 5550
+	5300 5450 5300 5650
 Wire Wire Line
 	5300 6450 5300 6350
 Wire Wire Line
@@ -925,17 +1039,17 @@ Wire Wire Line
 Wire Wire Line
 	4900 5050 4900 4950
 Wire Wire Line
-	4900 5450 4900 5550
+	4900 5450 4900 5650
 Wire Wire Line
 	7850 4150 7850 4050
 Wire Wire Line
-	7650 4150 7750 4150
+	7650 4150 7850 4150
 Wire Wire Line
 	7650 4050 7650 4150
 Wire Wire Line
 	7650 3650 7650 3750
 Wire Wire Line
-	7650 3650 7750 3650
+	7650 3650 7850 3650
 Wire Wire Line
 	7850 3650 7850 3750
 Wire Wire Line
@@ -959,6 +1073,8 @@ Wire Wire Line
 	5650 5900 7650 5900
 Wire Wire Line
 	5600 2550 5600 6000
+Wire Wire Line
+	5600 6000 7650 6000
 Wire Wire Line
 	6200 2650 6200 4400
 Wire Wire Line
@@ -994,7 +1110,7 @@ Wire Wire Line
 Wire Wire Line
 	6300 1150 7300 1150
 Wire Wire Line
-	6300 1150 6300 1750
+	6300 1150 6300 2950
 Wire Wire Line
 	5500 1750 6300 1750
 Wire Wire Line
@@ -1002,7 +1118,7 @@ Wire Wire Line
 Wire Wire Line
 	6400 1250 7000 1250
 Wire Wire Line
-	6400 1250 6400 1850
+	6400 1250 6400 2850
 Wire Wire Line
 	5500 1850 6400 1850
 Wire Wire Line
@@ -1029,18 +1145,18 @@ Wire Wire Line
 	7750 3150 7750 3050
 Connection ~ 7750 3650
 Wire Wire Line
-	7750 4250 8450 4250
+	7750 4250 8850 4250
 Connection ~ 7750 4150
 Connection ~ 8450 3050
 Wire Wire Line
-	7750 3050 8450 3050
+	7750 3050 8850 3050
 Wire Wire Line
 	8850 3050 8850 3750
 Wire Wire Line
 	8450 3750 8450 3550
 Connection ~ 8450 4250
 Wire Wire Line
-	8450 4050 8450 4250
+	8450 4050 8450 4350
 Wire Wire Line
 	8850 4250 8850 4050
 Wire Wire Line
@@ -1064,7 +1180,11 @@ Wire Wire Line
 Wire Wire Line
 	8950 1500 8950 1400
 Wire Wire Line
-	8450 2650 8450 2850
+	1350 5700 950  5700
+Wire Wire Line
+	950  5700 950  5300
+Wire Wire Line
+	8450 2650 8450 3150
 Wire Wire Line
 	8450 2550 8450 2350
 Wire Wire Line
@@ -1095,6 +1215,8 @@ Wire Wire Line
 	8450 6100 8250 6100
 Wire Wire Line
 	8450 6200 8250 6200
+Wire Bus Line
+	8150 4500 8150 6100
 Wire Wire Line
 	7450 4700 7650 4700
 Wire Wire Line
@@ -1118,6 +1240,8 @@ Wire Wire Line
 Wire Wire Line
 	6650 6600 6650 6700
 Wire Wire Line
+	7550 6000 7550 6000
+Wire Wire Line
 	6950 5000 7650 5000
 Wire Wire Line
 	7350 5300 7350 5100
@@ -1129,6 +1253,8 @@ Wire Wire Line
 	6650 5000 6850 5000
 Wire Wire Line
 	6850 5000 6850 4900
+Wire Bus Line
+	7750 4500 7750 6100
 Wire Bus Line
 	7750 4500 9250 4500
 Wire Wire Line
@@ -1160,11 +1286,31 @@ Wire Wire Line
 Wire Wire Line
 	10350 5000 10550 5000
 Wire Bus Line
+	10650 4600 10650 5300
+Wire Bus Line
+	9250 4500 9250 6200
+Wire Bus Line
 	10650 4600 9250 4600
 Wire Wire Line
 	5100 4300 6000 4300
 Wire Wire Line
 	5900 4200 5500 4200
+Wire Wire Line
+	3950 4500 4050 4500
+Wire Wire Line
+	3950 4600 4050 4600
+Wire Wire Line
+	3950 4700 4050 4700
+Wire Wire Line
+	3950 4800 4050 4800
+Wire Wire Line
+	3950 4900 4050 4900
+Wire Wire Line
+	3950 5000 4050 5000
+Wire Bus Line
+	4150 1550 4150 4900
+Wire Bus Line
+	4250 4900 4250 5400
 Wire Wire Line
 	3950 3150 4050 3150
 Wire Wire Line
@@ -1177,6 +1323,8 @@ Wire Wire Line
 	3950 3550 4050 3550
 Wire Wire Line
 	3950 3650 4050 3650
+Wire Bus Line
+	4250 4950 4250 2550
 Wire Wire Line
 	2000 3150 1800 3150
 Wire Wire Line
@@ -1190,6 +1338,16 @@ Wire Wire Line
 Wire Wire Line
 	950  3350 1150 3350
 Wire Wire Line
+	3950 5100 4150 5100
+Wire Wire Line
+	3950 5200 4150 5200
+Wire Wire Line
+	3950 5300 4150 5300
+Wire Wire Line
+	3950 5400 4150 5400
+Wire Wire Line
+	3950 5500 4150 5500
+Wire Wire Line
 	2850 2750 3050 2750
 Wire Wire Line
 	2850 2850 3050 2850
@@ -1197,169 +1355,23 @@ Wire Wire Line
 	2850 3050 3050 3050
 Wire Wire Line
 	2850 3150 3050 3150
+Wire Bus Line
+	3150 2050 3150 3050
 Wire Wire Line
 	2850 2950 3050 2950
 Wire Bus Line
+	5400 2150 5400 1550
+Wire Bus Line
 	5400 1550 4150 1550
 Wire Bus Line
+	5200 2050 5200 2650
+Wire Bus Line
 	5200 2050 3150 2050
+Wire Bus Line
+	4250 2550 3150 2550
+NoConn ~ 1350 6100
 Text Label 3150 2600 2    60   ~ 0
 d[8..12]
 Text Label 4150 3800 2    60   ~ 0
 d[2..7]
-Wire Wire Line
-	5300 5550 5300 5650
-Wire Wire Line
-	4900 5550 4900 5650
-Wire Wire Line
-	8450 2850 8450 3050
-Wire Wire Line
-	6300 1750 6300 2950
-Wire Wire Line
-	6400 1850 6400 2850
-Wire Wire Line
-	7750 3650 7850 3650
-Wire Wire Line
-	7750 4150 7850 4150
-Wire Wire Line
-	8450 3050 8850 3050
-Wire Wire Line
-	8450 3050 8450 3150
-Wire Wire Line
-	8450 4250 8850 4250
-Wire Wire Line
-	8450 4250 8450 4350
-Wire Wire Line
-	5600 6000 7650 6000
-$Comp
-L MCU_Module:Arduino_UNO_R3 A1
-U 1 1 5B6143DB
-P 2600 5400
-F 0 "A1" H 2600 6578 50  0000 C CNN
-F 1 "Arduino_UNO_R3" H 2600 6487 50  0000 C CNN
-F 2 "Modules:Arduino_UNO_R3" H 2750 4350 50  0001 L CNN
-F 3 "https://www.arduino.cc/en/Main/arduinoBoardUno" H 2400 6450 50  0001 C CNN
-	1    2600 5400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2100 5600 1900 5600
-Wire Wire Line
-	2100 5700 1900 5700
-Wire Wire Line
-	2100 5800 1900 5800
-Wire Wire Line
-	2100 5900 1900 5900
-Wire Wire Line
-	2100 6000 1900 6000
-Text Label 2100 5000 2    50   ~ 0
-d2
-Text Label 2100 5100 2    50   ~ 0
-d3
-Text Label 2100 5200 2    50   ~ 0
-d4
-Text Label 2100 5300 2    50   ~ 0
-d5
-Text Label 2100 5400 2    50   ~ 0
-d6
-Text Label 2100 5500 2    50   ~ 0
-d7
-Text Label 2100 5600 2    50   ~ 0
-d8
-Text Label 2100 5700 2    50   ~ 0
-d9
-Text Label 2100 5800 2    50   ~ 0
-d10
-Text Label 2100 5900 2    50   ~ 0
-d11
-Text Label 2100 6000 2    50   ~ 0
-d12
-Wire Wire Line
-	2100 5000 2000 5000
-Wire Wire Line
-	2100 5100 2000 5100
-Wire Wire Line
-	2100 5200 2000 5200
-Wire Wire Line
-	2100 5300 2000 5300
-Wire Wire Line
-	2100 5400 2000 5400
-Wire Wire Line
-	2100 5500 2000 5500
-Entry Wire Line
-	1900 4900 2000 5000
-Entry Wire Line
-	1900 5000 2000 5100
-Entry Wire Line
-	1900 5100 2000 5200
-Entry Wire Line
-	1900 5200 2000 5300
-Entry Wire Line
-	1900 5300 2000 5400
-Entry Wire Line
-	1900 5400 2000 5500
-Entry Wire Line
-	1800 5500 1900 5600
-Entry Wire Line
-	1800 5600 1900 5700
-Entry Wire Line
-	1800 5700 1900 5800
-Entry Wire Line
-	1800 5800 1900 5900
-Entry Wire Line
-	1800 5900 1900 6000
-Text Label 1900 4900 2    50   ~ 0
-d[2..7]
-Wire Bus Line
-	1900 4150 4150 4150
-Wire Bus Line
-	1800 4000 3150 4000
-Text Label 1800 5500 2    50   ~ 0
-d[8..12]
-NoConn ~ 2100 6100
-NoConn ~ 2100 4900
-NoConn ~ 2100 4800
-NoConn ~ 3100 6200
-NoConn ~ 3100 6100
-Wire Wire Line
-	2500 6500 2600 6500
-Connection ~ 2600 6500
-Wire Wire Line
-	2600 6500 2700 6500
-Wire Wire Line
-	2600 6500 2600 6600
-NoConn ~ 2700 4400
-NoConn ~ 2500 4400
-Wire Wire Line
-	3100 5400 3300 5400
-Wire Wire Line
-	3300 5400 3300 5100
-NoConn ~ 3100 5500
-NoConn ~ 3100 5600
-NoConn ~ 3100 5700
-NoConn ~ 3100 5800
-NoConn ~ 3100 5900
-NoConn ~ 3100 5200
-NoConn ~ 3100 5000
-NoConn ~ 3100 4800
-Wire Bus Line
-	10650 4600 10650 5300
-Wire Bus Line
-	5200 2050 5200 2650
-Wire Bus Line
-	1800 4000 1800 5900
-Wire Bus Line
-	4150 1550 4150 4150
-Wire Bus Line
-	3150 2050 3150 4000
-Wire Bus Line
-	5400 1550 5400 2150
-Wire Bus Line
-	1900 4150 1900 5400
-Wire Bus Line
-	9250 4500 9250 6200
-Wire Bus Line
-	8150 4500 8150 6100
-Wire Bus Line
-	7750 4500 7750 6100
 $EndSCHEMATC

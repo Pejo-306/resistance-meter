@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name ResistanceMeter-rescue)(type Legacy)(uri ${KIPRJMOD}/ResistanceMeter-rescue.lib)(options "")(descr ""))
+)
