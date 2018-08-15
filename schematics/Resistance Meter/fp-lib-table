@@ -1,3 +1,3 @@
 (fp_lib_table
-  (lib (name Arduino)(type KiCad)(uri "$(KIPRJMOD)/Arduino/Arduino.pretty")(options "")(descr ""))
+  (lib (name IRF520)(type Legacy)(uri "/data/KiCad Custom Libraries/SnapEDA/IRF520/IRF520.mod")(options "")(descr ""))
 )

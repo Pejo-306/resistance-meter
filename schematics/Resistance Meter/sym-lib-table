@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name ResistanceMeter-rescue)(type Legacy)(uri ${KIPRJMOD}/ResistanceMeter-rescue.lib)(options "")(descr ""))
+  (lib (name IRF520)(type Legacy)(uri "/data/KiCad Custom Libraries/SnapEDA/IRF520/IRF520.lib")(options "")(descr ""))
 )
